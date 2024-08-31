@@ -1,0 +1,221 @@
+body {
+    width: 100%;
+    background-color: black;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 45px;
+    background-color: #000;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: 0.03s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #949797;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    position: absolute;
+    background-color: #5d5f5f;
+    bottom: -4px;
+    left: 20px;
+}
+
+.findthestore {
+    background-color: #EFEFEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 0;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+h2,
+.h2 {
+    color: whitesmoke;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.findthestore h3 {
+    text-align: center;
+    padding: 5px 20px;
+}
+
+h3,
+.h3 {
+    font-size: 1.625em;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+#storelocatorpage .findthestore {
+    background-color: #EFEFEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 0;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+#storelocatorpage .select2dropdownwidth {
+    display: inline-block;
+    padding: 10px;
+    width: 350px;
+    max-width: 350px;
+}
+
+body,
+input,
+textarea,
+button,
+select {
+    font-size: 16px;
+    font-family: Futura, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #3d4246;
+    line-height: 1.5;
+}
+
+a,
+button,
+[role=button],
+input,
+label,
+select,
+textarea {
+    touch-action: manipulation;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+select {
+    width: 100% !important;
+}
+
+@media only screen and (min-width: 750px) {
+    select {
+        padding-top: 10px;
+        padding-left: 18px;
+        padding-bottom: 10px;
+    }
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-position: right center;
+    background-image: url(//cdn.shopify.com/s/files/1/0249/4155/9894/t/19/assets/ico-select.svg?v=1460386…);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    line-height: 1.2;
+    text-indent: .01px;
+    text-overflow: "";
+    cursor: pointer;
+    padding: 8px 28px 8px 15px;
+}
+
+input,
+textarea,
+select {
+    border: 1px solid #949494;
+    background-color: #fff;
+    color: #000;
+    max-width: 100%;
+    line-height: 1.2;
+    border-radius: 2px;
+}
+
+body,
+input,
+textarea,
+button,
+select {
+    font-size: 16px;
+    font-family: Futura, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #3d4246;
+    line-height: 1.5;
+}
+
+body,
+input,
+textarea,
+button,
+select {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: start;
+    margin-left: 10%;
+}
+
+footer .copyright p {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: large;
+    font-style: normal;
+    font-size: 15px;
+}
+
+footer .contact__us {
+    margin-left: 75%;
+    margin-top: -3%;
+}
+
+footer .contact__us a {
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
